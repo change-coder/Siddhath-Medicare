@@ -1,0 +1,101 @@
+:root
+{
+    --main-color:#7857fe;
+    --color-1:#e91e63;
+    --color-2:#f5ae10;
+    --color-3:#09d69c;
+    --bg-color:#c4bbbb;
+    --main-to-dark-color: var(--main-color);
+    --dark-to-main-color: var(--bg-color);
+    --shadow-black-100: 0 5px 15px rgba(0,0,0,0.1);
+    --shadow-black-300: 0 5px 15px rgba(0,0,0,0.3);
+    --black-900:#000000;
+    --black-400:#555555;
+    --black-100:#f7f7f7;
+    --black-000:#ffffff;
+    --black-alpha-100:rgba(0,0,0,0.05);
+}
+
+/* About section */
+.about .section-title img{
+    width: 70px;
+    height: 70px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.about-content
+{
+    margin-top: 0;
+    padding-top:0 ;
+}
+.about h2
+{
+    color:rgba(14, 173, 14,0.8);
+}
+/* End About section */
+
+/* faq */
+.faq .accordion-item:not(:last-child)
+{
+    margin-bottom: 20px;
+}
+.faq .accordion-header:not(.collapsed)
+{
+    background-color: var(--main-color);
+}
+.faq .accordion-header
+{
+    box-shadow:var(--shadow-black-100);
+    padding: 20px 30px;
+    transition: all 0.5s ease ;
+    cursor: pointer;
+    position: relative;
+
+}
+.faq .accordion-header::before{
+    content: "\f067";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    color: var(--black-400);
+    transition: all 0.5s ease;
+}
+.faq .accordion-header:not(.collapsed)::before{
+    content: "\f068";
+    color: #ffffff;
+}
+.faq .accordion-header h3
+{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black-400);
+    margin: 0;
+    transition: all 0.5s ease ;
+}
+.faq .accordion-header:not(.collapsed) h3{
+    color: #ffffff;
+}
+.faq .accordion-body{
+    padding: 30px;
+    background-color: var(--black-100);
+}
+
+.faq .accordion-body p, .faq .accordion-body li{
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--black-400);
+    line-height: 26px;
+    margin: 0;
+}
+
+/* Ends faq */
